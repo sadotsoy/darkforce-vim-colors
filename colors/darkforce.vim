@@ -82,6 +82,8 @@
   " Default
   exec "hi Comment guifg=".s:guishade2
   exec "hi Comment ctermfg=".s:ctermshade2
+  exec "hi Comment cterm=".s:comment_attr
+  exec "hi Comment gui=".s:comment_attr
   exec "hi Constant guifg=".s:guiaccent3
   exec "hi Constant ctermfg=".s:ctermaccent3
   exec "hi Character guifg=".s:guiaccent4
