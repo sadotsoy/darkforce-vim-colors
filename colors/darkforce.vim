@@ -1,8 +1,19 @@
+  """""""""""""""""""""""""""""""""""""""""""""""
+  " Vim color scheme                            "
+  "                                             "
+  " Name:       darforce.vim                    "
+  " Maintainer: Sadot Corotes <sadot@sadot.soy> "
+  " License:    MIT                             "
+  """""""""""""""""""""""""""""""""""""""""""""""
 
+  """"""""""""""""""""""""
+  " ONLY DARK BACKGROUND "
+  """"""""""""""""""""""""
+  set background=dark
 
-
-  if &background == 'dark'
-
+  """"""""""
+  " COLORS "
+  """"""""""
   let s:guishade0 = "#000000"
   let s:guishade1 = "#1e1e1e"
   let s:guishade2 = "#3b3b3b"
@@ -36,28 +47,39 @@
   let s:ctermaccent6 = 245
   let s:ctermaccent7 = 245
 
+  hi clear
+  if exists('syntax_on')
+    syntax reset
   endif
 
-
-
-
-  highlight clear
-  syntax reset
+  """"""""""""""
+  " Attributes "
+  """"""""""""""
   let g:colors_name = "darkforce"
+  let s:italic    = 'italic'
+  let s:bold      = 'bold'
+  let s:underline = 'underline'
+  let s:none      = 'NONE'
 
   """"""""""
   " Normal "
   """"""""""
-
   exec "hi Normal guifg=".s:guishade6." guibg=".s:guishade0
   exec "hi Normal ctermfg=".s:ctermshade6." ctermbg=".s:ctermshade0
+
+  """"""""""""""""""""""""""
+  " Italic comment support "
+  """"""""""""""""""""""""""
+  if !exists("g:darkforce_italic_comments")
+    let g:darkforce_italic_comments = 0
+  endif
+  let s:comment_attr = g:darkforce_italic_comments ? s:italic : s:none
+
 
   """""""""""""""""
   " Syntax groups "
   """""""""""""""""
-
   " Default
-
   exec "hi Comment guifg=".s:guishade2
   exec "hi Comment ctermfg=".s:ctermshade2
   exec "hi Constant guifg=".s:guiaccent3
@@ -84,7 +106,6 @@
   exec "hi Function ctermfg=".s:ctermaccent1
 
   " GitGutter
-
   exec "hi GitGutterAdd guifg=".s:guiaccent3
   exec "hi GitGutterAdd ctermfg=".s:ctermaccent3
   exec "hi GitGutterChange guifg=".s:guiaccent2
@@ -95,7 +116,6 @@
   exec "hi GitGutterDelete ctermfg=".s:ctermaccent0
 
   " fugitive
-
   exec "hi gitcommitComment guifg=".s:guishade3
   exec "hi gitcommitComment ctermfg=".s:ctermshade3
   exec "hi gitcommitOnBranch guifg=".s:guishade3
@@ -118,9 +138,7 @@
   """""""""""""""""""""""
   " Highlighting Groups "
   """""""""""""""""""""""
-
   " Default
-
   exec "hi ColorColumn guibg=".s:guishade1
   exec "hi ColorColumn ctermbg=".s:ctermshade1
   exec "hi Conceal guifg=".s:guishade2
@@ -204,19 +222,9 @@
   exec "hi WildMenu guifg=".s:guiaccent4." guibg=".s:guishade1
   exec "hi WildMenu ctermfg=".s:ctermaccent4." ctermbg=".s:ctermshade1
 
-  " NERDTree
-
-  exec "hi NERDTreeExecFile guifg=".s:guiaccent4
-  exec "hi NERDTreeExecFile ctermfg=".s:ctermaccent4
-  exec "hi NERDTreeDirSlash guifg=".s:guiaccent5
-  exec "hi NERDTreeDirSlash ctermfg=".s:ctermaccent5
-  exec "hi NERDTreeCWD guifg=".s:guiaccent0
-  exec "hi NERDTreeCWD ctermfg=".s:ctermaccent0
-
   """"""""""""
   " Clean up "
   """"""""""""
-
   unlet s:guishade0 s:guishade1 s:guishade2 s:guishade3 s:guishade4 s:guishade5 s:guishade6 s:guishade7 s:guiaccent0 s:guiaccent1 s:guiaccent2 s:guiaccent3 s:guiaccent4 s:guiaccent5 s:guiaccent6 s:guiaccent7
   unlet s:ctermshade0 s:ctermshade1 s:ctermshade2 s:ctermshade3 s:ctermshade4 s:ctermshade5 s:ctermshade6 s:ctermshade7 s:ctermaccent0 s:ctermaccent1 s:ctermaccent2 s:ctermaccent3 s:ctermaccent4 s:ctermaccent5 s:ctermaccent6 s:ctermaccent7
 
