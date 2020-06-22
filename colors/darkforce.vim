@@ -18,44 +18,33 @@ set background=dark
 """"""""""
 " COLORS "
 """"""""""
-" my groups
-hi! dkoBgAlt            guibg=#24252a               ctermbg=236
-hi! dkoBgLight          guibg=#303135               ctermbg=237
-hi! dkoTextLight guifg=#dddddd                           ctermfg=253
-
-hi! dkoPopup            guibg=#2a2a2f guifg=#ccc0c0
-hi! dkoPopupBlank       guibg=#2a2a2f guifg=#2a2a2f
-
-hi! dkoDecorations                    guifg=#505a6a
-hi! dkoRegex                          guifg=#cc99cc
-hi! dkoQuote                          guifg=#77aa88 gui=italic
-hi! dkoType                           guifg=#60687a gui=italic
-hi! dkoWarningText      guibg=#2c2b2a guifg=#ddaa66 gui=bold
-hi! dkoNormalKey                      guifg=#ccccbb
-
-hi! dkoSignWarning                    guifg=#ddaa66
-hi! dkoSignInfo                       guifg=fg
-hi! dkoSignMessage                    guifg=#77aa88
-
-" MIOS
-
-" ============================================================================
-" Vim base
-" ============================================================================
 " Darkforce groups
-hi! dfCursor guibg=#303033 guifg=#a0a0aa ctermbg=238 ctermfg=245
-hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=235 ctermfg=238
-hi! dfReturn guifg=#cc8877 gui=italic
-hi! dfTextLight guifg=#dddddd ctermfg=253
-hi! dfIncSearch guibg=#dd77cc guifg=bg gui=NONE ctermbg=219 ctermfg=235
-hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
-hi! dfKeyword guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfBgAlt guibg=#24252a ctermbg=236
+hi! dfBgLight guibg=#303135 ctermbg=237
 hi! dfCharacter guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
-hi! dfInclude guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=235 ctermfg=238
 hi! dfConditional guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfCursor guibg=#303033 guifg=#a0a0aa ctermbg=238 ctermfg=245
+hi! dfDecorations guifg=#505a6a
+hi! dfIncSearch guibg=#dd77cc guifg=bg gui=NONE ctermbg=219 ctermfg=235
+hi! dfInclude guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfKeyword guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfNormalKey guifg=#ccccbb
+hi! dfPopup guibg=#2a2a2f guifg=#ccc0c0
+hi! dfPopupBlank guibg=#2a2a2f guifg=#2a2a2f
+hi! dfQuote guifg=#77aa88 gui=italic
+hi! dfRegex guifg=#cc99cc
+hi! dfReturn guifg=#cc8877 gui=italic
+hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
+hi! dfSignInfo guifg=fg
+hi! dfSignMessage guifg=#77aa88
+hi! dfSignWarning guifg=#ddaa66
+hi! dfTextLight guifg=#dddddd ctermfg=253
+hi! dfTextLight guifg=#dddddd ctermfg=253
+hi! dfType guifg=#60687a gui=italic
+hi! dfWarningText guibg=#2c2b2a guifg=#ddaa66 gui=bold
 
-
-" this is the general background
+" VIM GROUPS
 hi! Boolean guifg=#cccccc gui=italic
 hi! Comment guifg=#4d5361 gui=italic
 hi! Constant guifg=NONE gui=italic,underline
@@ -65,6 +54,7 @@ hi! DiffChange guibg=#090806 guifg=#b1761a ctermbg=235 ctermfg=94
 hi! DiffDelete guibg=#0e0707 guifg=#9d1c1c ctermbg=235 ctermfg=52
 hi! DiffText guibg=#4a2a2a
 hi! Error guibg=NONE guifg=#ee6666 ctermbg=NONE ctermfg=160
+hi! Folded guibg=#24252a guifg=#88aabb ctermbg=236 ctermfg=110
 hi! Function guifg=#667f9b
 hi! Ignore guifg=#40485a
 hi! MoreMsg guifg=#aa6666
@@ -83,44 +73,36 @@ hi! SpellRare ctermbg=NONE
 hi! Statement guifg=#777777 gui=NONE ctermfg=245
 hi! StorageClass guifg=#777777
 hi! String guifg=#88aabb ctermfg=110
-hi! link Identifier dfTextLight
-hi! link IncSearch dfIncSearch
-hi! link Label dfTextLight
-hi! link PreProc dfTextLight
-hi! link Search dfSearch
-hi! link Title dkoTextLight
-hi! link dfBuiltValues Constant
+hi! TabLineSel guifg=#cc8877
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
-
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
 hi! Visual guibg=#afa08f guifg=#1f1f1f
 hi! WarningMsg guifg=#ccaa88
 hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
-hi! Folded guibg=#24252a guifg=#88aabb ctermbg=236 ctermfg=110
-hi! TabLineSel guifg=#cc8877
-hi! link TabLine Folded
-hi! link TabLineFill dkoBgAlt
-
+" LINKS
 hi! link Character dfCharacter
 hi! link Conditional dfConditional
-hi! link Directory      Identifier
+hi! link Directory Identifier
+hi! link Identifier dfTextLight
+hi! link IncSearch dfIncSearch
 hi! link Include dfInclude
 hi! link Keyword dfKeyword
+hi! link Label dfTextLight
+hi! link PreProc dfTextLight
+hi! link Search dfSearch
+hi! link TabLine Folded
+hi! link TabLineFill dfBgAlt
+hi! link Title dfTextLight
+hi! link dfBuiltValues Constant
 
 " ============================================================================
 " My colors
 " ============================================================================
-
-" JavaDoc
-hi! link dkoJavaDocTag  SpecialComment
-hi! link dkoJavaDocType SpecialComment
-hi! link dkoJavaDocKey  SpecialComment
-
 " Signs
-hi! link dkoSignError   Error
-hi! link dkoSignAdded   DiffAdd
-hi! link dkoSignRemoved DiffDelete
+hi! link dfSignError Error
+hi! link dfSignAdded DiffAdd
+hi! link dfSignRemoved DiffDelete
 
 " ============================================================================
 " Line backgrounds
@@ -134,17 +116,17 @@ hi! link CursorLineNr dfCursor
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
 
-hi! link ColorColumn dkoBgAlt
-hi! link CursorColumn dkoBgAlt
+hi! link ColorColumn dfBgAlt
+hi! link CursorColumn dfBgAlt
 
 " current line
-hi! link CursorLine dkoBgAlt
+hi! link CursorLine dfBgAlt
 
 " ============================================================================
 " Popup menu
 " ============================================================================
 
-hi! link Pmenu dkoBgLight
+hi! link Pmenu dfBgLight
 hi! PmenuSel guibg=#404044
 " popup menu scrollbar
 hi! link PmenuSbar PmenuSel
@@ -157,25 +139,25 @@ hi! link WildMenu PmenuThumb
 " ============================================================================
 
 " w0rp/ale
-"hi! link ALEErrorSign             dkoSignError
+"hi! link ALEErrorSign             dfSignError
 " tomtom/quickfixsigns_vim
-hi! link QuickFixSignsDiffAdd dkoSignAdded
+hi! link QuickFixSignsDiffAdd dfSignAdded
 hi! link QuickFixSignsDiffChange DiffChange
-hi! link QuickFixSignsDiffDelete dkoSignRemoved
+hi! link QuickFixSignsDiffDelete dfSignRemoved
 " airblade/vim-gitgutter
-hi! link GitGutterAdd dkoSignAdded
+hi! link GitGutterAdd dfSignAdded
 hi! link GitGutterChange DiffChange
 hi! link GitGutterChangeDelete DiffChange
-hi! link GitGutterDelete dkoSignRemoved
+hi! link GitGutterDelete dfSignRemoved
 " mhinz/vim-signify
-hi! link SignifySignAdd dkoSignAdded
+hi! link SignifySignAdd dfSignAdded
 hi! link SignifySignChange DiffChange
 hi! link SignifySignChangeDelete DiffChange
-hi! link SignifySignDelete dkoSignRemoved
+hi! link SignifySignDelete dfSignRemoved
 " chrisbra/changesPlugin
-hi! link ChangesSignTextAdd dkoSignAdded
+hi! link ChangesSignTextAdd dfSignAdded
 hi! link ChangesSignTextCh DiffChange
-hi! link ChangesSignTextDel dkoSignRemoved
+hi! link ChangesSignTextDel dfSignRemoved
 
 " the head in <head></head>
 hi! MatchParen guibg=#225588 guifg=#ddddcc ctermbg=18 ctermfg=fg
@@ -218,17 +200,17 @@ hi! link gitHash Normal
 hi link gitmessengerHeader Title
 
 " Commit hash at 'Commit:' header
-hi link gitmessengerHash dkoPopup
+hi link gitmessengerHash dfPopup
 
 " History number at 'History:' header
-hi link gitmessengerHistory dkoPopup
+hi link gitmessengerHistory dfPopup
 
 " Normal color. This color is the most important
-hi link gitmessengerPopupNormal dkoPopup
+hi link gitmessengerPopupNormal dfPopup
 
 " Color of 'end of buffer'. To hide '~' in popup window, I recommend to use the same background
 " color as gitmessengerPopupNormal.
-hi link gitmessengerEndOfBuffer dkoPopupBlank
+hi link gitmessengerEndOfBuffer dfPopupBlank
 
 " ============================================================================
 " vim-indentguides
@@ -241,11 +223,11 @@ hi! IndentGuidesOdd guibg=#252527
 " ============================================================================
 hi! link jsBuiltins Identifier
 
-hi! link jsRegexpCharClass dkoRegex
-hi! link jsRegexpString dkoRegex
+hi! link jsRegexpCharClass dfRegex
+hi! link jsRegexpString dfRegex
 
 hi! link jsGlobalObjects Normal
-hi! link jsGlobalNodeObjects dkoNormalKey
+hi! link jsGlobalNodeObjects dfNormalKey
 hi! link jsFuncArgOperator Operator
 hi! link jsExport StorageClass
 hi! link jsImport jsExport
@@ -254,21 +236,21 @@ hi! link jsModuleKeyword String
 hi! link jsNull Constant
 hi! link jsBoolean dfReturn
 hi! link jsReturn dfReturn
-hi! link jsSuper dkoQuote
+hi! link jsSuper dfQuote
 "hi! link jsStorageClass Statement
-hi! link jsTemplateBraces dkoRegex
+hi! link jsTemplateBraces dfRegex
 hi! link jsThis Identifier
 "hi! link jsVariableDef Identifier
 
 " group {Event} e
 " token Event
-hi! link jsDocType dkoJavaDocType
-hi! link jsDocTypeNoParam dkoJavaDocType
+hi! link jsDocType dfJavaDocType
+hi! link jsDocTypeNoParam dfJavaDocType
 " token { }
-hi! link jsDocTypeBrackets dkoDecorations
+hi! link jsDocTypeBrackets dfDecorations
 
-hi! link jsDocTags dkoJavaDocTag
-hi! link jsDocParam dkoJavaDocKey
+hi! link jsDocTags dfJavaDocTag
+hi! link jsDocParam dfJavaDocKey
 
 " group 'class InlineEditors extends Component'
 hi! link jsClassDefinition Identifier
@@ -289,14 +271,14 @@ hi! link jsFuncArgs Identifier
 
 hi! link jsBracket Identifier
 hi! link jsSpreadExpression   Identifier
-hi! link jsDestructuringBlock dkoNormalKey
+hi! link jsDestructuringBlock dfNormalKey
 
 hi! link jsObject Identifier
-hi! link jsObjectKey dkoNormalKey
+hi! link jsObjectKey dfNormalKey
 hi! link jsObjectKeyComputed String
 hi! link jsObjectProp Normal
 
-hi! link jsxAttrib dkoNormalKey
+hi! link jsxAttrib dfNormalKey
 hi! link jsxAttributeBraces Noise
 hi! link jsxEqual Noise
 hi! link jsxBraces Noise
@@ -333,9 +315,9 @@ hi! link  typescriptExport StorageClass
 hi! link  typescriptImport typescriptExport
 hi! link  typescriptCastKeyword StorageClass
 hi! link  typescriptParens Noise
-hi! link  typescriptPredefinedType dkoType
-hi! link  typescriptObjectType dkoType
-hi! link  typescriptTemplateSB dkoRegex
+hi! link  typescriptPredefinedType dfType
+hi! link  typescriptObjectType dfType
+hi! link  typescriptTemplateSB dfRegex
 hi! link  typescriptTypeReference Normal
 hi! link  typescriptVariable StorageClass
 
@@ -344,8 +326,8 @@ hi! link  typescriptVariable StorageClass
 " ============================================================================
 
 hi! link plug1 Normal
-hi! link plug2 dkoDecorations
-hi! link plugDash dkoDecorations
+hi! link plug2 dfDecorations
+hi! link plugDash dfDecorations
 hi! link plugSha SpecialComment
 
 " ============================================================================
@@ -374,24 +356,24 @@ hi! link helpExample String
 hi! link helpHeadline Title
 hi! link helpOption Identifier
 hi! link helpSectionDelim Ignore
-hi! link helpSpecial dkoRegex
-hi! link helpWarning dkoWarningText
+hi! link helpSpecial dfRegex
+hi! link helpWarning dfWarningText
 
 " ============================================================================
 " coc
 " ============================================================================
 
-hi! link CocErrorSign dkoSignError
-hi! link CocWarningSign dkoSignWarning
-hi! link CocInfoSign dkoSignInfo
-hi! link CocHintSign dkoSignMessage
+hi! link CocErrorSign dfSignError
+hi! link CocWarningSign dfSignWarning
+hi! link CocInfoSign dfSignInfo
+hi! link CocHintSign dfSignMessage
 
 " ============================================================================
 " QuickFix
 " ============================================================================
 
 hi! qfError guifg=#772222
-hi! link QuickFixLine dkoBgLight
+hi! link QuickFixLine dfBgLight
 hi! link qfFileName SpecialComment
 hi! link qfLineNr Comment
-hi! link qfSeparator dkoDecorations
+hi! link qfSeparator dfDecorations
