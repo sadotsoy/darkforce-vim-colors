@@ -10,7 +10,7 @@ wants to use it.
 The plugins for hi used are:
 
 ![javascript](./screenshots/js.png)
-![css](./screenshots/css.png)
+![css](./screenshots/scss.png)
 
 [maxmellon/vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty)
 [yuezk/vim-js](https://github.com/yuezk/vim-js)
