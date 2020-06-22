@@ -96,17 +96,17 @@ hi! link TabLineFill dfBgAlt
 hi! link Title dfTextLight
 hi! link dfBuiltValues Constant
 
-" ============================================================================
-" My colors
-" ============================================================================
+""""""""""
+" Colors "
+""""""""""
 " Signs
 hi! link dfSignError Error
 hi! link dfSignAdded DiffAdd
 hi! link dfSignRemoved DiffDelete
 
-" ============================================================================
-" Line backgrounds
-" ============================================================================
+"""""""""""""""
+" Backgrounds "
+"""""""""""""""
 
 " fg is thin line
 hi! VertSplit guibg=#262631 guifg=#262631 ctermbg=237 ctermfg=237
@@ -122,9 +122,9 @@ hi! link CursorColumn dfBgAlt
 " current line
 hi! link CursorLine dfBgAlt
 
-" ============================================================================
-" Popup menu
-" ============================================================================
+""""""""
+" Menu "
+""""""""
 
 hi! link Pmenu dfBgLight
 hi! PmenuSel guibg=#404044
@@ -134,9 +134,9 @@ hi! PmenuThumb guibg=#505055
 
 hi! link WildMenu PmenuThumb
 
-" ============================================================================
-" Plugin provided signs
-" ============================================================================
+"""""""""""
+" Plugins "
+"""""""""""
 
 " w0rp/ale
 "hi! link ALEErrorSign             dfSignError
@@ -164,17 +164,17 @@ hi! MatchParen guibg=#225588 guifg=#ddddcc ctermbg=18 ctermfg=fg
 " the <> in <head>
 hi! ParenMatch guibg=#994433 guifg=#ddddcc gui=NONE
 
-" ============================================================================
-" CSS
-" ============================================================================
+"""""""
+" CSS "
+"""""""
 
 hi! link cssTagName Delimiter
 hi! link cssProp StorageClass
 hi! link lessVariable Identifier
 
-" ============================================================================
-" Diff
-" ============================================================================
+""""""""
+" Diff "
+""""""""
 
 hi! link diffFile Normal
 hi! link diffIndexLine Normal
@@ -184,17 +184,13 @@ hi! link diffNewFile Normal
 hi! link diffAdded DiffAdd
 hi! link diffRemoved DiffDelete
 
-" ============================================================================
-" Git (committia)
-" ============================================================================
+"""""""
+" Git "
+"""""""
 
 hi! link gitKeyword Identifier
 hi! link gitDate String
 hi! link gitHash Normal
-
-" ============================================================================
-" git-messenger
-" ============================================================================
 
 " Header such as 'Commit:', 'Author:'
 hi link gitmessengerHeader Title
@@ -212,15 +208,15 @@ hi link gitmessengerPopupNormal dfPopup
 " color as gitmessengerPopupNormal.
 hi link gitmessengerEndOfBuffer dfPopupBlank
 
-" ============================================================================
-" vim-indentguides
-" ============================================================================
+""""""""""""""""
+" Indentguides "
+""""""""""""""""
 
 hi! IndentGuidesOdd guibg=#252527
 
-" ============================================================================
-" JavaScript
-" ============================================================================
+""""""""""""""
+" JavaScript "
+""""""""""""""
 hi! link jsBuiltins Identifier
 
 hi! link jsRegexpCharClass dfRegex
@@ -288,24 +284,24 @@ hi! link jsxComponentName Statement
 hi! link jsxTagName Statement
 hi! link jsxCloseString Noise
 
-" ============================================================================
-" JSON
-" ============================================================================
+""""""""
+" JSON "
+""""""""
 
 hi! link jsonBoolean Boolean
 hi! link jsonEscape Operator
 
-" ============================================================================
-" Markdown
-" ============================================================================
+""""""""""""
+" Markdown "
+""""""""""""
 
 hi! link markdownCode Identifier
 hi! link markdownLinkDelimiter Noise
 hi! link markdownLinkTextDelimiter Noise
 
-" ============================================================================
-" Typescript - yats.vim
-" ============================================================================
+"""""""""""""""""""""""""
+" Typescript - yats.vim "
+"""""""""""""""""""""""""
 
 hi! link  typescriptAbstract Operator
 hi! link  typescriptAccessibilityModifier StorageClass
@@ -321,18 +317,14 @@ hi! link  typescriptTemplateSB dfRegex
 hi! link  typescriptTypeReference Normal
 hi! link  typescriptVariable StorageClass
 
-" ============================================================================
-" vim-plug
-" ============================================================================
+""""""""""""
+" Vim-plug "
+""""""""""""
 
 hi! link plug1 Normal
 hi! link plug2 dfDecorations
 hi! link plugDash dfDecorations
 hi! link plugSha SpecialComment
-
-" ============================================================================
-" VimL
-" ============================================================================
 
 " ----------------------------------------------------------------------------
 " Highlighting
@@ -348,9 +340,9 @@ hi! link vimHiGroup Normal
 " Don't highlight this one or it will override vim-css-colors
 "hi! link vimHiGuiFgBg  Normal
 
-" ============================================================================
-" vim help
-" ============================================================================
+""""""""""""
+" Vim help "
+""""""""""""
 
 hi! link helpExample String
 hi! link helpHeadline Title
@@ -359,18 +351,18 @@ hi! link helpSectionDelim Ignore
 hi! link helpSpecial dfRegex
 hi! link helpWarning dfWarningText
 
-" ============================================================================
-" coc
-" ============================================================================
+"""""""
+" COC "
+"""""""
 
 hi! link CocErrorSign dfSignError
 hi! link CocWarningSign dfSignWarning
 hi! link CocInfoSign dfSignInfo
 hi! link CocHintSign dfSignMessage
 
-" ============================================================================
-" QuickFix
-" ============================================================================
+""""""""""""
+" QuickFix "
+""""""""""""
 
 hi! qfError guifg=#772222
 hi! link QuickFixLine dfBgLight
