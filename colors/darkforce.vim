@@ -1,232 +1,379 @@
-  """""""""""""""""""""""""""""""""""""""""""""""
-  " Vim color scheme                            "
-  "                                             "
-  " Name:       darforce.vim                    "
-  " Maintainer: Sadot Corotes <sadot@sadot.soy> "
-  " License:    MIT                             "
-  """""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""
+" Vim color scheme                            "
+"                                             "
+" Name:       darforce.vim                    "
+" Maintainer: Sadot Corotes <sadot@sadot.soy> "
+" License:    MIT                             "
+"""""""""""""""""""""""""""""""""""""""""""""""
 
-  """"""""""""""""""""""""
-  " ONLY DARK BACKGROUND "
-  """"""""""""""""""""""""
-  set background=dark
+"""""""""""
+" GENERAL "
+"""""""""""
+hi clear
+if exists('syntax_on') | syntax reset | endif
 
-  """"""""""
-  " COLORS "
-  """"""""""
-  let s:guishade0 = "#000000"
-  let s:guishade1 = "#1e1e1e"
-  let s:guishade2 = "#3b3b3b"
-  let s:guishade3 = "#595959"
-  let s:guishade4 = "#777777"
-  let s:guishade5 = "#959595"
-  let s:guishade6 = "#b2b2b2"
-  let s:guishade7 = "#d0d0d0"
-  let s:guiaccent0 = "#c67676"
-  let s:guiaccent1 = "#bdad9a"
-  let s:guiaccent2 = "#c89e6c"
-  let s:guiaccent3 = "#a8a897"
-  let s:guiaccent4 = "#a897a7"
-  let s:guiaccent5 = "#aca78a"
-  let s:guiaccent6 = "#7c968e"
-  let s:guiaccent7 = "#967c93"
-  let s:ctermshade0 = 16
-  let s:ctermshade1 = 234
-  let s:ctermshade2 = 237
-  let s:ctermshade3 = 240
-  let s:ctermshade4 = 243
-  let s:ctermshade5 = 246
-  let s:ctermshade6 = 249
-  let s:ctermshade7 = 252
-  let s:ctermaccent0 = 1
-  let s:ctermaccent1 = 8
-  let s:ctermaccent2 = 7
-  let s:ctermaccent3 = 247
-  let s:ctermaccent4 = 247
-  let s:ctermaccent5 = 247
-  let s:ctermaccent6 = 245
-  let s:ctermaccent7 = 245
+let g:colors_name = "darkforce"
+set background=dark
 
-  hi clear
-  if exists('syntax_on')
-    syntax reset
-  endif
+""""""""""
+" COLORS "
+""""""""""
+" Darkforce groups
+hi! dfBgAlt guibg=#24252a ctermbg=236
+hi! dfBgLight guibg=#303135 ctermbg=237
+hi! dfCharacter guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=235 ctermfg=238
+hi! dfConditional guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfCursor guibg=#303033 guifg=#a0a0aa ctermbg=238 ctermfg=245
+hi! dfDecorations guifg=#505a6a
+hi! dfIncSearch guibg=#dd77cc guifg=bg gui=NONE ctermbg=219 ctermfg=235
+hi! dfInclude guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfKeyword guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
+hi! dfNormalKey guifg=#ccccbb
+hi! dfPopup guibg=#2a2a2f guifg=#ccc0c0
+hi! dfPopupBlank guibg=#2a2a2f guifg=#2a2a2f
+hi! dfQuote guifg=#77aa88 gui=italic
+hi! dfRegex guifg=#cc99cc
+hi! dfReturn guifg=#cc8877 gui=italic
+hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
+hi! dfSignInfo guifg=fg
+hi! dfSignMessage guifg=#77aa88
+hi! dfSignWarning guifg=#ddaa66
+hi! dfTextLight guifg=#dddddd ctermfg=253
+hi! dfTextLight guifg=#dddddd ctermfg=253
+hi! dfType guifg=#60687a gui=italic
+hi! dfWarningText guibg=#2c2b2a guifg=#ddaa66 gui=bold
 
-  """"""""""""""
-  " Attributes "
-  """"""""""""""
-  let g:colors_name = "darkforce"
-  let s:italic    = 'italic'
-  let s:bold      = 'bold'
-  let s:underline = 'underline'
-  let s:none      = 'NONE'
+" VIM GROUPS
+hi! Boolean guifg=#cccccc gui=italic
+hi! Comment guifg=#4d5361 gui=italic
+hi! Constant guifg=NONE gui=italic,underline
+hi! Delimiter guifg=#ce8ace ctermfg=139
+hi! DiffAdd guibg=#050604 guifg=#869677 ctermbg=235 ctermfg=22
+hi! DiffChange guibg=#090806 guifg=#b1761a ctermbg=235 ctermfg=94
+hi! DiffDelete guibg=#0e0707 guifg=#9d1c1c ctermbg=235 ctermfg=52
+hi! DiffText guibg=#4a2a2a
+hi! Error guibg=NONE guifg=#ee6666 ctermbg=NONE ctermfg=160
+hi! Folded guibg=#24252a guifg=#88aabb ctermbg=236 ctermfg=110
+hi! Function guifg=#667f9b
+hi! Ignore guifg=#40485a
+hi! MoreMsg guifg=#aa6666
+hi! Noise guifg=#888888 ctermfg=243
+hi! NonText guifg=#334455
+hi! Normal guibg=#000000 guifg=#b2b2b2 ctermbg=235 ctermfg=250
+hi! Number guifg=#e68e3a ctermfg=208
+hi! Operator guifg=#888888
+hi! Question guifg=#88aabb
+hi! Special guifg=#dd7766 ctermfg=172
+hi! SpecialComment guifg=#707a8a gui=NONE
+hi! SpecialKey guifg=#772222
+hi! SpellBad ctermbg=NONE
+hi! SpellCap ctermbg=NONE
+hi! SpellRare ctermbg=NONE
+hi! Statement guifg=#777777 gui=NONE ctermfg=245
+hi! StorageClass guifg=#777777
+hi! String guifg=#88aabb ctermfg=110
+hi! TabLineSel guifg=#cc8877
+hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
+hi! Type guifg=#dddddd gui=NONE ctermfg=253
+hi! Underlined guifg=#88aaee gui=underline ctermfg=110
+hi! Visual guibg=#afa08f guifg=#1f1f1f
+hi! WarningMsg guifg=#ccaa88
+hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
+" LINKS
+hi! link Character dfCharacter
+hi! link Conditional dfConditional
+hi! link Directory Identifier
+hi! link Identifier dfTextLight
+hi! link IncSearch dfIncSearch
+hi! link Include dfInclude
+hi! link Keyword dfKeyword
+hi! link Label dfTextLight
+hi! link PreProc dfTextLight
+hi! link Search dfSearch
+hi! link TabLine Folded
+hi! link TabLineFill dfBgAlt
+hi! link Title dfTextLight
+hi! link dfBuiltValues Constant
 
-  """"""""""
-  " Normal "
-  """"""""""
-  exec "hi Normal guifg=".s:guishade6." guibg=".s:guishade0
-  exec "hi Normal ctermfg=".s:ctermshade6." ctermbg=".s:ctermshade0
+" ============================================================================
+" My colors
+" ============================================================================
+" Signs
+hi! link dfSignError Error
+hi! link dfSignAdded DiffAdd
+hi! link dfSignRemoved DiffDelete
 
-  """"""""""""""""""""""""""
-  " Italic comment support "
-  """"""""""""""""""""""""""
-  if !exists("g:darkforce_italic_comments")
-    let g:darkforce_italic_comments = 0
-  endif
-  let s:comment_attr = g:darkforce_italic_comments ? s:italic : s:none
+" ============================================================================
+" Line backgrounds
+" ============================================================================
 
+" fg is thin line
+hi! VertSplit guibg=#262631 guifg=#262631 ctermbg=237 ctermfg=237
+" this is the number columnn
+hi! link LineNr dfColumn
+hi! link CursorLineNr dfCursor
+hi! link FoldColumn LineNr
+hi! link SignColumn LineNr
 
-  """""""""""""""""
-  " Syntax groups "
-  """""""""""""""""
-  " Default
-  exec "hi Comment guifg=".s:guishade2
-  exec "hi Comment ctermfg=".s:ctermshade2
-  exec "hi Comment cterm=".s:comment_attr
-  exec "hi Comment gui=".s:comment_attr
-  exec "hi Constant guifg=".s:guiaccent3
-  exec "hi Constant ctermfg=".s:ctermaccent3
-  exec "hi Character guifg=".s:guiaccent4
-  exec "hi Character ctermfg=".s:ctermaccent4
-  exec "hi Identifier guifg=".s:guiaccent2." gui=none"
-  exec "hi Identifier ctermfg=".s:ctermaccent2." cterm=none"
-  exec "hi Statement guifg=".s:guiaccent5
-  exec "hi Statement ctermfg=".s:ctermaccent5
-  exec "hi PreProc guifg=".s:guiaccent6
-  exec "hi PreProc ctermfg=".s:ctermaccent6
-  exec "hi Type guifg=".s:guiaccent7
-  exec "hi Type ctermfg=".s:ctermaccent7
-  exec "hi Special guifg=".s:guiaccent4
-  exec "hi Special ctermfg=".s:ctermaccent4
-  exec "hi Underlined guifg=".s:guiaccent5
-  exec "hi Underlined ctermfg=".s:ctermaccent5
-  exec "hi Error guifg=".s:guiaccent0." guibg=".s:guishade1
-  exec "hi Error ctermfg=".s:ctermaccent0." ctermbg=".s:ctermshade1
-  exec "hi Todo guifg=".s:guiaccent0." guibg=".s:guishade1
-  exec "hi Todo ctermfg=".s:ctermaccent0." ctermbg=".s:ctermshade1
-  exec "hi Function guifg=".s:guiaccent1
-  exec "hi Function ctermfg=".s:ctermaccent1
+hi! link ColorColumn dfBgAlt
+hi! link CursorColumn dfBgAlt
 
-  " GitGutter
-  exec "hi GitGutterAdd guifg=".s:guiaccent3
-  exec "hi GitGutterAdd ctermfg=".s:ctermaccent3
-  exec "hi GitGutterChange guifg=".s:guiaccent2
-  exec "hi GitGutterChange ctermfg=".s:ctermaccent2
-  exec "hi GitGutterChangeDelete guifg=".s:guiaccent2
-  exec "hi GitGutterChangeDelete ctermfg=".s:ctermaccent2
-  exec "hi GitGutterDelete guifg=".s:guiaccent0
-  exec "hi GitGutterDelete ctermfg=".s:ctermaccent0
+" current line
+hi! link CursorLine dfBgAlt
 
-  " fugitive
-  exec "hi gitcommitComment guifg=".s:guishade3
-  exec "hi gitcommitComment ctermfg=".s:ctermshade3
-  exec "hi gitcommitOnBranch guifg=".s:guishade3
-  exec "hi gitcommitOnBranch ctermfg=".s:ctermshade3
-  exec "hi gitcommitHeader guifg=".s:guishade5
-  exec "hi gitcommitHeader ctermfg=".s:ctermshade5
-  exec "hi gitcommitHead guifg=".s:guishade3
-  exec "hi gitcommitHead ctermfg=".s:ctermshade3
-  exec "hi gitcommitSelectedType guifg=".s:guiaccent3
-  exec "hi gitcommitSelectedType ctermfg=".s:ctermaccent3
-  exec "hi gitcommitSelectedFile guifg=".s:guiaccent3
-  exec "hi gitcommitSelectedFile ctermfg=".s:ctermaccent3
-  exec "hi gitcommitDiscardedType guifg=".s:guiaccent2
-  exec "hi gitcommitDiscardedType ctermfg=".s:ctermaccent2
-  exec "hi gitcommitDiscardedFile guifg=".s:guiaccent2
-  exec "hi gitcommitDiscardedFile ctermfg=".s:ctermaccent2
-  exec "hi gitcommitUntrackedFile guifg=".s:guiaccent0
-  exec "hi gitcommitUntrackedFile ctermfg=".s:ctermaccent0
+" ============================================================================
+" Popup menu
+" ============================================================================
 
-  """""""""""""""""""""""
-  " Highlighting Groups "
-  """""""""""""""""""""""
-  " Default
-  exec "hi ColorColumn guibg=".s:guishade1
-  exec "hi ColorColumn ctermbg=".s:ctermshade1
-  exec "hi Conceal guifg=".s:guishade2
-  exec "hi Conceal ctermfg=".s:ctermshade2
-  exec "hi Cursor guifg=".s:guishade0
-  exec "hi Cursor ctermfg=".s:ctermshade0
-  exec "hi CursorColumn guibg=".s:guishade1
-  exec "hi CursorColumn ctermbg=".s:ctermshade1
-  exec "hi CursorLine guibg=".s:guishade1
-  exec "hi CursorLine ctermbg=".s:ctermshade1." cterm=none"
-  exec "hi Directory guifg=".s:guiaccent5
-  exec "hi Directory ctermfg=".s:ctermaccent5
-  exec "hi DiffAdd guifg=".s:guiaccent3." guibg=".s:guishade1
-  exec "hi DiffAdd ctermfg=".s:ctermaccent3." ctermbg=".s:ctermshade1
-  exec "hi DiffChange guifg=".s:guiaccent2." guibg=".s:guishade1
-  exec "hi DiffChange ctermfg=".s:ctermaccent2." ctermbg=".s:ctermshade1
-  exec "hi DiffDelete guifg=".s:guiaccent0." guibg=".s:guishade1
-  exec "hi DiffDelete ctermfg=".s:ctermaccent0." ctermbg=".s:ctermshade1
-  exec "hi DiffText guifg=".s:guiaccent2." guibg=".s:guishade2
-  exec "hi DiffText ctermfg=".s:ctermaccent2." ctermbg=".s:ctermshade2
-  exec "hi ErrorMsg guifg=".s:guishade7." guibg=".s:guiaccent0
-  exec "hi ErrorMsg ctermfg=".s:ctermshade7." ctermbg=".s:ctermaccent0
-  exec "hi VertSplit guifg=".s:guishade0." guibg=".s:guishade3
-  exec "hi VertSplit ctermfg=".s:ctermshade0." ctermbg=".s:ctermshade3
-  exec "hi Folded guifg=".s:guishade4." guibg=".s:guishade1
-  exec "hi Folded ctermfg=".s:ctermshade4." ctermbg=".s:ctermshade1
-  exec "hi FoldColumn guifg=".s:guishade4." guibg=".s:guishade1
-  exec "hi FoldColumn ctermfg=".s:ctermshade4." ctermbg=".s:ctermshade1
-  exec "hi SignColumn guibg=".s:guishade0
-  exec "hi SignColumn ctermbg=".s:ctermshade0
-  exec "hi IncSearch guifg=".s:guishade0." guibg=".s:guiaccent2
-  exec "hi IncSearch ctermfg=".s:ctermshade0." ctermbg=".s:ctermaccent2
-  exec "hi LineNr guifg=".s:guishade2." guibg=".s:guishade0
-  exec "hi LineNr ctermfg=".s:ctermshade2." ctermbg=".s:ctermshade0
-  exec "hi CursorLineNr guifg=".s:guishade3." guibg=".s:guishade1
-  exec "hi CursorLineNr ctermfg=".s:ctermshade3." ctermbg=".s:ctermshade1
-  exec "hi MatchParen guibg=".s:guishade2
-  exec "hi MatchParen ctermbg=".s:ctermshade2
-  exec "hi MoreMsg guifg=".s:guishade0." guibg=".s:guiaccent4
-  exec "hi MoreMsg ctermfg=".s:ctermshade0." ctermbg=".s:ctermaccent4
-  exec "hi NonText guifg=".s:guishade2." guibg=".s:guishade0
-  exec "hi NonText ctermfg=".s:ctermshade2." ctermbg=".s:ctermshade0
-  exec "hi Pmenu guifg=".s:guishade6." guibg=".s:guishade1
-  exec "hi Pmenu ctermfg=".s:ctermshade6." ctermbg=".s:ctermshade1
-  exec "hi PmenuSel guifg=".s:guiaccent4." guibg=".s:guishade1
-  exec "hi PmenuSel ctermfg=".s:ctermaccent4." ctermbg=".s:ctermshade1
-  exec "hi PmenuSbar guifg=".s:guiaccent3." guibg=".s:guishade1
-  exec "hi PmenuSbar ctermfg=".s:ctermaccent3." ctermbg=".s:ctermshade1
-  exec "hi PmenuThumb guifg=".s:guiaccent0." guibg=".s:guishade2
-  exec "hi PmenuThumb ctermfg=".s:ctermaccent0." ctermbg=".s:ctermshade2
-  exec "hi Question guifg=".s:guishade7." guibg=".s:guishade1
-  exec "hi Question ctermfg=".s:ctermshade7." ctermbg=".s:ctermshade1
-  exec "hi Search guifg=".s:guishade0." guibg=".s:guiaccent2
-  exec "hi Search ctermfg=".s:ctermshade0." ctermbg=".s:ctermaccent2
-  exec "hi SpecialKey guifg=".s:guiaccent7." guibg=".s:guishade0
-  exec "hi SpecialKey ctermfg=".s:ctermaccent7." ctermbg=".s:ctermshade0
-  exec "hi SpellBad guifg=".s:guiaccent0
-  exec "hi SpellBad ctermfg=".s:ctermaccent0." ctermbg=NONE cterm=undercurl"
-  exec "hi SpellCap guifg=".s:guiaccent2
-  exec "hi SpellCap ctermfg=".s:ctermaccent2." ctermbg=NONE cterm=undercurl"
-  exec "hi SpellLocal guifg=".s:guiaccent4
-  exec "hi SpellLocal ctermfg=".s:ctermaccent4
-  exec "hi SpellRare guifg=".s:guiaccent1
-  exec "hi SpellRare ctermfg=".s:ctermaccent1
-  exec "hi StatusLine guifg=".s:guishade4." guibg=".s:guishade1." gui=none"
-  exec "hi StatusLine ctermfg=".s:ctermshade4." ctermbg=".s:ctermshade1." cterm=none"
-  exec "hi TabLine guifg=".s:guishade5." guibg=".s:guishade1
-  exec "hi TabLine ctermfg=".s:ctermshade5." ctermbg=".s:ctermshade1
-  exec "hi TabLineFill guibg=".s:guishade1
-  exec "hi TabLineFill ctermbg=".s:ctermshade1
-  exec "hi TabLineSel guifg=".s:guishade6." guibg=".s:guishade0
-  exec "hi TabLineSel ctermfg=".s:ctermshade6." ctermbg=".s:ctermshade0
-  exec "hi Title guifg=".s:guiaccent5
-  exec "hi Title ctermfg=".s:ctermaccent5
-  exec "hi Visual guibg=".s:guishade1
-  exec "hi Visual ctermbg=".s:ctermshade1
-  exec "hi VisualNOS guifg=".s:guiaccent0." guibg=".s:guishade1
-  exec "hi VisualNOS ctermfg=".s:ctermaccent0." ctermbg=".s:ctermshade1
-  exec "hi WarningMsg guifg=".s:guiaccent0
-  exec "hi WarningMsg ctermfg=".s:ctermaccent0
-  exec "hi WildMenu guifg=".s:guiaccent4." guibg=".s:guishade1
-  exec "hi WildMenu ctermfg=".s:ctermaccent4." ctermbg=".s:ctermshade1
+hi! link Pmenu dfBgLight
+hi! PmenuSel guibg=#404044
+" popup menu scrollbar
+hi! link PmenuSbar PmenuSel
+hi! PmenuThumb guibg=#505055
 
-  """"""""""""
-  " Clean up "
-  """"""""""""
-  unlet s:guishade0 s:guishade1 s:guishade2 s:guishade3 s:guishade4 s:guishade5 s:guishade6 s:guishade7 s:guiaccent0 s:guiaccent1 s:guiaccent2 s:guiaccent3 s:guiaccent4 s:guiaccent5 s:guiaccent6 s:guiaccent7
-  unlet s:ctermshade0 s:ctermshade1 s:ctermshade2 s:ctermshade3 s:ctermshade4 s:ctermshade5 s:ctermshade6 s:ctermshade7 s:ctermaccent0 s:ctermaccent1 s:ctermaccent2 s:ctermaccent3 s:ctermaccent4 s:ctermaccent5 s:ctermaccent6 s:ctermaccent7
+hi! link WildMenu PmenuThumb
 
+" ============================================================================
+" Plugin provided signs
+" ============================================================================
+
+" w0rp/ale
+"hi! link ALEErrorSign             dfSignError
+" tomtom/quickfixsigns_vim
+hi! link QuickFixSignsDiffAdd dfSignAdded
+hi! link QuickFixSignsDiffChange DiffChange
+hi! link QuickFixSignsDiffDelete dfSignRemoved
+" airblade/vim-gitgutter
+hi! link GitGutterAdd dfSignAdded
+hi! link GitGutterChange DiffChange
+hi! link GitGutterChangeDelete DiffChange
+hi! link GitGutterDelete dfSignRemoved
+" mhinz/vim-signify
+hi! link SignifySignAdd dfSignAdded
+hi! link SignifySignChange DiffChange
+hi! link SignifySignChangeDelete DiffChange
+hi! link SignifySignDelete dfSignRemoved
+" chrisbra/changesPlugin
+hi! link ChangesSignTextAdd dfSignAdded
+hi! link ChangesSignTextCh DiffChange
+hi! link ChangesSignTextDel dfSignRemoved
+
+" the head in <head></head>
+hi! MatchParen guibg=#225588 guifg=#ddddcc ctermbg=18 ctermfg=fg
+" the <> in <head>
+hi! ParenMatch guibg=#994433 guifg=#ddddcc gui=NONE
+
+" ============================================================================
+" CSS
+" ============================================================================
+
+hi! link cssTagName Delimiter
+hi! link cssProp StorageClass
+hi! link lessVariable Identifier
+
+" ============================================================================
+" Diff
+" ============================================================================
+
+hi! link diffFile Normal
+hi! link diffIndexLine Normal
+hi! link diffLine Normal
+hi! link diffNewFile Normal
+
+hi! link diffAdded DiffAdd
+hi! link diffRemoved DiffDelete
+
+" ============================================================================
+" Git (committia)
+" ============================================================================
+
+hi! link gitKeyword Identifier
+hi! link gitDate String
+hi! link gitHash Normal
+
+" ============================================================================
+" git-messenger
+" ============================================================================
+
+" Header such as 'Commit:', 'Author:'
+hi link gitmessengerHeader Title
+
+" Commit hash at 'Commit:' header
+hi link gitmessengerHash dfPopup
+
+" History number at 'History:' header
+hi link gitmessengerHistory dfPopup
+
+" Normal color. This color is the most important
+hi link gitmessengerPopupNormal dfPopup
+
+" Color of 'end of buffer'. To hide '~' in popup window, I recommend to use the same background
+" color as gitmessengerPopupNormal.
+hi link gitmessengerEndOfBuffer dfPopupBlank
+
+" ============================================================================
+" vim-indentguides
+" ============================================================================
+
+hi! IndentGuidesOdd guibg=#252527
+
+" ============================================================================
+" JavaScript
+" ============================================================================
+hi! link jsBuiltins Identifier
+
+hi! link jsRegexpCharClass dfRegex
+hi! link jsRegexpString dfRegex
+
+hi! link jsGlobalObjects Normal
+hi! link jsGlobalNodeObjects dfNormalKey
+hi! link jsFuncArgOperator Operator
+hi! link jsExport StorageClass
+hi! link jsImport jsExport
+hi! link jsFrom jsExport
+hi! link jsModuleKeyword String
+hi! link jsNull Constant
+hi! link jsBoolean dfReturn
+hi! link jsReturn dfReturn
+hi! link jsSuper dfQuote
+"hi! link jsStorageClass Statement
+hi! link jsTemplateBraces dfRegex
+hi! link jsThis Identifier
+"hi! link jsVariableDef Identifier
+
+" group {Event} e
+" token Event
+hi! link jsDocType dfJavaDocType
+hi! link jsDocTypeNoParam dfJavaDocType
+" token { }
+hi! link jsDocTypeBrackets dfDecorations
+
+hi! link jsDocTags dfJavaDocTag
+hi! link jsDocParam dfJavaDocKey
+
+" group 'class InlineEditors extends Component'
+hi! link jsClassDefinition Identifier
+hi! link jsClassKeyword Identifier
+hi! link jsExtendsKeyword Identifier
+
+" group 'editorInstances = {};'
+hi! link jsClassProperty Normal
+
+" token 'componentWillMount'
+hi! link jsClassFuncName Normal
+
+hi! link jsArrowFunction Delimiter
+hi! link jsBuiltinValues dfBuiltValues
+
+hi! link jsFuncCall Function
+hi! link jsFuncArgs Identifier
+
+hi! link jsBracket Identifier
+hi! link jsSpreadExpression   Identifier
+hi! link jsDestructuringBlock dfNormalKey
+
+hi! link jsObject Identifier
+hi! link jsObjectKey dfNormalKey
+hi! link jsObjectKeyComputed String
+hi! link jsObjectProp Normal
+
+hi! link jsxAttrib dfNormalKey
+hi! link jsxAttributeBraces Noise
+hi! link jsxEqual Noise
+hi! link jsxBraces Noise
+
+hi! link jsxOpenPunct Noise
+hi! link jsxComponentName Statement
+hi! link jsxTagName Statement
+hi! link jsxCloseString Noise
+
+" ============================================================================
+" JSON
+" ============================================================================
+
+hi! link jsonBoolean Boolean
+hi! link jsonEscape Operator
+
+" ============================================================================
+" Markdown
+" ============================================================================
+
+hi! link markdownCode Identifier
+hi! link markdownLinkDelimiter Noise
+hi! link markdownLinkTextDelimiter Noise
+
+" ============================================================================
+" Typescript - yats.vim
+" ============================================================================
+
+hi! link  typescriptAbstract Operator
+hi! link  typescriptAccessibilityModifier StorageClass
+hi! link  typescriptClassKeyword Normal
+hi! link  typescriptClassName Label
+hi! link  typescriptExport StorageClass
+hi! link  typescriptImport typescriptExport
+hi! link  typescriptCastKeyword StorageClass
+hi! link  typescriptParens Noise
+hi! link  typescriptPredefinedType dfType
+hi! link  typescriptObjectType dfType
+hi! link  typescriptTemplateSB dfRegex
+hi! link  typescriptTypeReference Normal
+hi! link  typescriptVariable StorageClass
+
+" ============================================================================
+" vim-plug
+" ============================================================================
+
+hi! link plug1 Normal
+hi! link plug2 dfDecorations
+hi! link plugDash dfDecorations
+hi! link plugSha SpecialComment
+
+" ============================================================================
+" VimL
+" ============================================================================
+
+" ----------------------------------------------------------------------------
+" Highlighting
+" ----------------------------------------------------------------------------
+
+" the word 'highlight' or 'hi'
+hi! link vimHighlight Normal
+" the word 'clear'
+" First thing after 'hi'
+hi! link vimGroup Normal
+hi! link vimHiLink String
+hi! link vimHiGroup Normal
+" Don't highlight this one or it will override vim-css-colors
+"hi! link vimHiGuiFgBg  Normal
+
+" ============================================================================
+" vim help
+" ============================================================================
+
+hi! link helpExample String
+hi! link helpHeadline Title
+hi! link helpOption Identifier
+hi! link helpSectionDelim Ignore
+hi! link helpSpecial dfRegex
+hi! link helpWarning dfWarningText
+
+" ============================================================================
+" coc
+" ============================================================================
+
+hi! link CocErrorSign dfSignError
+hi! link CocWarningSign dfSignWarning
+hi! link CocInfoSign dfSignInfo
+hi! link CocHintSign dfSignMessage
+
+" ============================================================================
+" QuickFix
+" ============================================================================
+
+hi! qfError guifg=#772222
+hi! link QuickFixLine dfBgLight
+hi! link qfFileName SpecialComment
+hi! link qfLineNr Comment
+hi! link qfSeparator dfDecorations
