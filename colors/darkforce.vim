@@ -75,12 +75,12 @@ hi! SpellRare ctermbg=NONE
 hi! Statement guifg=#777777 gui=NONE ctermfg=245
 hi! StorageClass guifg=#4A4A4A
 hi! String guifg=#A5B4BB ctermfg=110
-hi! TabLineSel guifg=#cc8877
+hi! TabLineSel guifg=#CC8877
 hi! Tags guifg=#636363 gui=NONE ctermfg=245
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
-hi! Visual guibg=#afa08f guifg=#1f1f1f
+hi! Visual guibg=#F5B986 guifg=#1f1f1f
 hi! WarningMsg guifg=#ccaa88
 hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
 
@@ -114,6 +114,7 @@ hi! link dfSignRemoved DiffDelete
 
 " fg is thin line
 hi! VertSplit guibg=#262631 guifg=#262631 ctermbg=237 ctermfg=237
+
 " this is the number columnn
 hi! link LineNr dfColumn
 hi! link CursorLineNr dfCursor
