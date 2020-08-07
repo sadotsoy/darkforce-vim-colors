@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""
 " Vim color scheme                            "
 "                                             "
 " Name:       darforce.vim                    "
@@ -19,22 +19,23 @@ set background=dark
 " COLORS "
 """"""""""
 " Darkforce groups
-hi! dfBgAlt guibg=#24252a ctermbg=236
+hi! dfAttrib guifg=#CCBCAB
+hi! dfBgAlt guibg=#16171A ctermbg=236
 hi! dfBgLight guibg=#303135 ctermbg=237
 hi! dfCharacter guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
 hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=235 ctermfg=238
 hi! dfConditional guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
-hi! dfCursor guibg=#303033 guifg=#a0a0aa ctermbg=238 ctermfg=245
+hi! dfCursor guibg=#3E3E42 guifg=#a0a0aa ctermbg=238 ctermfg=245
 hi! dfDecorations guifg=#505a6a
 hi! dfIncSearch guibg=#dd77cc guifg=bg gui=NONE ctermbg=219 ctermfg=235
 hi! dfInclude guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
 hi! dfKeyword guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
-hi! dfNormalKey guifg=#ccccbb
+hi! dfNormalKey guifg=#CCBCAB
 hi! dfPopup guibg=#2a2a2f guifg=#ccc0c0
 hi! dfPopupBlank guibg=#2a2a2f guifg=#2a2a2f
-hi! dfQuote guifg=#77aa88 gui=italic
-hi! dfRegex guifg=#cc99cc
-hi! dfReturn guifg=#cc8877 gui=italic
+hi! dfQuote guifg=#77AA88 gui=italic,underline
+hi! dfRegex guifg=#CC99CC gui=underline
+hi! dfReturn guifg=#CC8877 gui=italic
 hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
 hi! dfSignInfo guifg=fg
 hi! dfSignMessage guifg=#77aa88
@@ -46,6 +47,7 @@ hi! dfWarningText guibg=#2c2b2a guifg=#ddaa66 gui=bold
 
 " VIM GROUPS
 hi! Boolean guifg=#cccccc gui=italic
+hi! Closures guifg=#9C9C9C ctermfg=243
 hi! Comment guifg=#4d5361 gui=italic
 hi! Constant guifg=NONE gui=italic,underline
 hi! Delimiter guifg=#ce8ace ctermfg=139
@@ -58,11 +60,11 @@ hi! Folded guibg=#24252a guifg=#88aabb ctermbg=236 ctermfg=110
 hi! Function guifg=#667f9b
 hi! Ignore guifg=#40485a
 hi! MoreMsg guifg=#aa6666
-hi! Noise guifg=#888888 ctermfg=243
+hi! Noise guifg=#606060 ctermfg=243
 hi! NonText guifg=#334455
-hi! Normal guibg=#000000 guifg=#b2b2b2 ctermbg=235 ctermfg=250
+hi! Normal guifg=#b2b2b2 ctermbg=235 ctermfg=250
 hi! Number guifg=#e68e3a ctermfg=208
-hi! Operator guifg=#888888
+hi! Operator guifg=#887B74
 hi! Question guifg=#88aabb
 hi! Special guifg=#dd7766 ctermfg=172
 hi! SpecialComment guifg=#707a8a gui=NONE
@@ -71,15 +73,17 @@ hi! SpellBad ctermbg=NONE
 hi! SpellCap ctermbg=NONE
 hi! SpellRare ctermbg=NONE
 hi! Statement guifg=#777777 gui=NONE ctermfg=245
-hi! StorageClass guifg=#777777
-hi! String guifg=#88aabb ctermfg=110
+hi! StorageClass guifg=#4A4A4A
+hi! String guifg=#A5B4BB ctermfg=110
 hi! TabLineSel guifg=#cc8877
+hi! Tags guifg=#636363 gui=NONE ctermfg=245
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
 hi! Visual guibg=#afa08f guifg=#1f1f1f
 hi! WarningMsg guifg=#ccaa88
 hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
+
 " LINKS
 hi! link Character dfCharacter
 hi! link Conditional dfConditional
@@ -233,7 +237,7 @@ hi! link jsNull Constant
 hi! link jsBoolean dfReturn
 hi! link jsReturn dfReturn
 hi! link jsSuper dfQuote
-"hi! link jsStorageClass Statement
+hi! link jsStorageClass Statement
 hi! link jsTemplateBraces dfRegex
 hi! link jsThis Identifier
 "hi! link jsVariableDef Identifier
@@ -274,15 +278,24 @@ hi! link jsObjectKey dfNormalKey
 hi! link jsObjectKeyComputed String
 hi! link jsObjectProp Normal
 
-hi! link jsxAttrib dfNormalKey
+hi! link jsxAttrib dfAttrib
 hi! link jsxAttributeBraces Noise
 hi! link jsxEqual Noise
 hi! link jsxBraces Noise
 
-hi! link jsxOpenPunct Noise
-hi! link jsxComponentName Statement
-hi! link jsxTagName Statement
-hi! link jsxCloseString Noise
+hi! link jsxOpenPunct Closures
+hi! link jsxComponentName Tags
+hi! link jsxTagName Tags
+hi! link jsxCloseString Closures
+
+
+""""""""
+" HTML "
+""""""""
+hi! link htmlTag Tags
+hi! link htmlSpecialTagName Tags
+hi! link htmlTagName Noise
+hi! link htmlEndTag Noise
 
 """"""""
 " JSON "
