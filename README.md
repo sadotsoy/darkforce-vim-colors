@@ -2,8 +2,6 @@
 
 ## Version 1.0.0
 
-> A 256-color / 24-bit Vim color.
-
 My **goal** with **darkforce** is the **easy visualization** of what **I consider important to see**.
 
 ## Design choices
