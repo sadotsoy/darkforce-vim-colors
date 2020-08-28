@@ -36,7 +36,7 @@ hi! dfPopupBlank guibg=#2a2a2f guifg=#2a2a2f
 hi! dfQuote guifg=#77AA88 gui=italic,underline cterm=italic,underline
 hi! dfRegex guifg=#CC99CC gui=underline cterm=underline
 hi! dfReturn guifg=#CC8877 gui=italic cterm=italic
-hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
+hi! dfSearch guibg=#ae71bd guifg=#CCBCAB ctermbg=219 ctermfg=0
 hi! dfSignInfo guifg=fg
 hi! dfSignMessage guifg=#77aa88
 hi! dfSignWarning guifg=#ddaa66
@@ -80,7 +80,7 @@ hi! Tags guifg=#636363 gui=NONE ctermfg=245
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
-hi! Visual guibg=#232325
+hi! Visual guibg=#363639
 hi! WarningMsg guifg=#ccaa88
 hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
 
