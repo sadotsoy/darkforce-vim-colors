@@ -13,19 +13,19 @@ hi clear
 if exists('syntax_on') | syntax reset | endif
 
 let g:colors_name = "darkforce"
-set background=dark
+set background=dark termguicolors
 
 """"""""""
 " COLORS "
 """"""""""
 " Darkforce groups
-hi! dfAttrib guifg=#CCBCAB
-hi! dfBgAlt guibg=#16171A ctermbg=236
+hi! dfAttrib guifg=#CCBCAB ctermfg=180
+hi! dfBgAlt guibg=#16171A ctermbg=234
 hi! dfBgLight guibg=#303135 ctermbg=237
-hi! dfCharacter guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
-hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=235 ctermfg=238
-hi! dfConditional guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
-hi! dfCursor guibg=#3E3E42 guifg=#a0a0aa ctermbg=238 ctermfg=245
+hi! dfCharacter guibg=NONE guifg=#b2b2b2 ctermfg=248
+hi! dfColumn guibg=#000000 guifg=#404044 ctermbg=16 ctermfg=238
+hi! dfConditional guibg=NONE guifg=#b2b2b2 ctermfg=244
+hi! dfCursor guibg=#3E3E42 guifg=#A0A0AA ctermbg=234 ctermfg=243
 hi! dfDecorations guifg=#505a6a
 hi! dfIncSearch guibg=#dd77cc guifg=bg gui=NONE ctermbg=219 ctermfg=235
 hi! dfInclude guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
@@ -33,23 +33,23 @@ hi! dfKeyword guibg=NONE guifg=#b2b2b2 ctermbg=NONE ctermfg=250
 hi! dfNormalKey guifg=#CCBCAB
 hi! dfPopup guibg=#2a2a2f guifg=#ccc0c0
 hi! dfPopupBlank guibg=#2a2a2f guifg=#2a2a2f
-hi! dfQuote guifg=#77AA88 gui=italic,underline
-hi! dfRegex guifg=#CC99CC gui=underline
-hi! dfReturn guifg=#CC8877 gui=italic
-hi! dfSearch guibg=#ae71bd guifg=#000000 ctermbg=219 ctermfg=0
+hi! dfQuote guifg=#77AA88 gui=italic,underline cterm=italic,underline
+hi! dfRegex guifg=#CC99CC gui=underline cterm=underline
+hi! dfReturn guifg=#CC8877 gui=italic cterm=italic
+hi! dfSearch guibg=#ae71bd guifg=#CCBCAB ctermbg=219 ctermfg=0
 hi! dfSignInfo guifg=fg
 hi! dfSignMessage guifg=#77aa88
 hi! dfSignWarning guifg=#ddaa66
 hi! dfTextLight guifg=#dddddd ctermfg=253
 hi! dfTextLight guifg=#dddddd ctermfg=253
-hi! dfType guifg=#60687a gui=italic
-hi! dfWarningText guibg=#2c2b2a guifg=#ddaa66 gui=bold
+hi! dfType guifg=#60687a gui=italic cterm=italic
+hi! dfWarningText guibg=#2c2b2a guifg=#ddaa66 gui=bold cterm=bold
 
 " VIM GROUPS
-hi! Boolean guifg=#cccccc gui=italic
+hi! Boolean guifg=#cccccc gui=italic cterm=italic
 hi! Closures guifg=#9C9C9C ctermfg=243
-hi! Comment guifg=#4d5361 gui=italic
-hi! Constant guifg=NONE gui=italic,underline
+hi! Comment guifg=#5d5361 gui=italic ctermfg=96 cterm=italic
+hi! Constant guifg=NONE gui=italic,underline ctermfg=none cterm=italic,underline
 hi! Delimiter guifg=#ce8ace ctermfg=139
 hi! DiffAdd guibg=#050604 guifg=#869677 ctermbg=235 ctermfg=22
 hi! DiffChange guibg=#090806 guifg=#b1761a ctermbg=235 ctermfg=94
@@ -62,7 +62,7 @@ hi! Ignore guifg=#40485a
 hi! MoreMsg guifg=#aa6666
 hi! Noise guifg=#606060 ctermfg=243
 hi! NonText guifg=#334455
-hi! Normal guifg=#b2b2b2 ctermbg=235 ctermfg=250
+hi! Normal guifg=#b2b2b2 ctermbg=16 ctermfg=250
 hi! Number guifg=#e68e3a ctermfg=208
 hi! Operator guifg=#887B74
 hi! Question guifg=#88aabb
@@ -80,7 +80,7 @@ hi! Tags guifg=#636363 gui=NONE ctermfg=245
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
-hi! Visual guibg=#F5B986 guifg=#1f1f1f
+hi! Visual guibg=#363639
 hi! WarningMsg guifg=#ccaa88
 hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
 
