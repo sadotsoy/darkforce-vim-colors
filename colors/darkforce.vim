@@ -64,6 +64,7 @@ hi! Noise guifg=#606060 ctermfg=243
 hi! NonText guifg=#334455
 hi! Normal guifg=#b2b2b2 ctermbg=16 ctermfg=250
 hi! Number guifg=#e68e3a ctermfg=208
+hi! Number2 guifg=#CE7F34 ctermfg=208
 hi! Operator guifg=#887B74
 hi! Question guifg=#88aabb
 hi! Special guifg=#dd7766 ctermfg=172
@@ -80,9 +81,9 @@ hi! Tags guifg=#636363 gui=NONE ctermfg=245
 hi! Todo guibg=#303033 guifg=#ddaa66 gui=bold
 hi! Type guifg=#dddddd gui=NONE ctermfg=253
 hi! Underlined guifg=#88aaee gui=underline ctermfg=110
-hi! Visual guibg=#363639
-hi! WarningMsg guifg=#ccaa88
-hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold
+hi! Visual guibg=#363639 ctermbg=237
+hi! WarningMsg guifg=#ccaa88 ctermfg=223
+hi! Whitespace guibg=#1c1c1c guifg=#40485a gui=bold ctermbg=235
 
 " LINKS
 hi! link Character dfCharacter
@@ -173,8 +174,17 @@ hi! ParenMatch guibg=#994433 guifg=#ddddcc gui=NONE
 " CSS "
 """""""
 
-hi! link cssTagName Delimiter
+" hi! link cssTagName Delimiter
+hi! link cssAtRule diffRemoved
+hi! link cssComment Comment
 hi! link cssProp StorageClass
+hi! link cssPseudoClassId Constant
+hi! link cssPseudoClassLang Constant
+hi! link cssTagName Constant
+hi! link cssUnitDecorators Number2
+hi! link cssValueInteger Number
+hi! link cssValueLength Number
+hi! link cssValueNumber Number
 hi! link lessVariable Identifier
 
 """"""""
@@ -351,8 +361,6 @@ hi! link vimHighlight Normal
 hi! link vimGroup Normal
 hi! link vimHiLink String
 hi! link vimHiGroup Normal
-" Don't highlight this one or it will override vim-css-colors
-"hi! link vimHiGuiFgBg  Normal
 
 """"""""""""
 " Vim help "
