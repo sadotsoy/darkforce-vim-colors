@@ -22,12 +22,12 @@ My **goal** with **darkforce** is the **easy visualization** of what **I conside
 
 - **TODO** are  **orange** with **dark gray background**  along with **bold text** `#ddaa66`.
 
-  
+
 
   ### Vim states
 
-  - The **Search** highlight is **purple** `#AE71BD`. 
-  - The **Visual** highlight is **light orange** `#F5B986`.V
+  - The **Search** highlight is **purple** `#AE71BD`.
+  - The **Visual** highlight is **light gray** `#363639`.
 
 ## Screenshots
 
