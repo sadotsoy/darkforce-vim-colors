@@ -1,0 +1,221 @@
+{
+  "name": "Darkforce-vim-colors",
+  "colors": [
+    {
+      "name": "Black",
+      "hex": "#000000"
+    },
+    {
+      "name": "Marshland",
+      "hex": "#050604"
+    },
+    {
+      "name": "Rangoon Green",
+      "hex": "#090806"
+    },
+    {
+      "name": "Woodsmoke",
+      "hex": "#16171a"
+    },
+    {
+      "name": "Cod Gray",
+      "hex": "#1c1c1c"
+    },
+    {
+      "name": "Tuatara",
+      "hex": "#2c2b2a"
+    },
+    {
+      "name": "Shark",
+      "hex": "#303135"
+    },
+    {
+      "name": "Tuna",
+      "hex": "#363639"
+    },
+    {
+      "name": "Ship Gray",
+      "hex": "#404044"
+    },
+    {
+      "name": "Abbey",
+      "hex": "#505055"
+    },
+    {
+      "name": "Tundora",
+      "hex": "#4a4a4a"
+    },
+    {
+      "name": "Scorpion",
+      "hex": "#606060"
+    },
+    {
+      "name": "Dove Gray",
+      "hex": "#636363"
+    },
+    {
+      "name": "Boulder",
+      "hex": "#777777"
+    },
+    {
+      "name": "Shuttle Gray",
+      "hex": "#505a6a"
+    },
+    {
+      "name": "River Bed",
+      "hex": "#40485a"
+    },
+    {
+      "name": "Lynch",
+      "hex": "#667f9b"
+    },
+    {
+      "name": "Dusty Gray",
+      "hex": "#9c9c9c"
+    },
+    {
+      "name": "Fire Bush",
+      "hex": "#e68e3a"
+    },
+    {
+      "name": "Di Serria",
+      "hex": "#ddaa66"
+    },
+    {
+      "name": "Tan",
+      "hex": "#ccaa88"
+    },
+    {
+      "name": "Soft Amber",
+      "hex": "#ccbcab"
+    },
+    {
+      "name": "Raw Sienna",
+      "hex": "#ce7f34"
+    },
+    {
+      "name": "Mandalay",
+      "hex": "#b1761a"
+    },
+    {
+      "name": "Santas Gray",
+      "hex": "#a0a0aa"
+    },
+    {
+      "name": "Silver Chalice",
+      "hex": "#b2b2b2"
+    },
+    {
+      "name": "Blumine",
+      "hex": "#225588"
+    },
+    {
+      "name": "Moon Mist",
+      "hex": "#ddddcc"
+    },
+    {
+      "name": "Silver Rust",
+      "hex": "#ccc0c0"
+    },
+    {
+      "name": "Alto",
+      "hex": "#dddddd"
+    },
+    {
+      "name": "Silver",
+      "hex": "#cccccc"
+    },
+    {
+      "name": "Night Rider",
+      "hex": "#0e0707"
+    },
+    {
+      "name": "El Salva",
+      "hex": "#994433"
+    },
+    {
+      "name": "Old Brick",
+      "hex": "#9d1c1c"
+    },
+    {
+      "name": "Crown of Thorns",
+      "hex": "#772222"
+    },
+    {
+      "name": "Cowboy",
+      "hex": "#4a2a2a"
+    },
+    {
+      "name": "Wisteria",
+      "hex": "#ae71bd"
+    },
+    {
+      "name": "Orchid",
+      "hex": "#dd77cc"
+    },
+    {
+      "name": "Viola",
+      "hex": "#ce8ace"
+    },
+    {
+      "name": "Lilac",
+      "hex": "#cc99cc"
+    },
+    {
+      "name": "Pickled Bluewood",
+      "hex": "#334455"
+    },
+    {
+      "name": "Battleship Gray",
+      "hex": "#869677"
+    },
+    {
+      "name": "Bay Leaf",
+      "hex": "#77aa88"
+    },
+    {
+      "name": "Japonica",
+      "hex": "#dd7766"
+    },
+    {
+      "name": "Burnt Sienna",
+      "hex": "#ee6666"
+    },
+    {
+      "name": "Antique Brass",
+      "hex": "#cc8877"
+    },
+    {
+      "name": "Coral Tree",
+      "hex": "#aa6666"
+    },
+    {
+      "name": "Salt Box",
+      "hex": "#5d5361"
+    },
+    {
+      "name": "Nepal",
+      "hex": "#88aabb"
+    },
+    {
+      "name": "Hit Gray",
+      "hex": "#a5b4bb"
+    },
+    {
+      "name": "Raven",
+      "hex": "#707a8a"
+    },
+    {
+      "name": "Portage",
+      "hex": "#88aaee"
+    },
+    {
+      "name": "Charade",
+      "hex": "#262631"
+    },
+    {
+      "name": "Americano",
+      "hex": "#887b74"
+    }
+  ]
+}
