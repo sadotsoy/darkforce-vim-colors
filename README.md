@@ -29,10 +29,14 @@ My **goal** with **darkforce** is the **easy visualization** of what **I conside
   - The **Search** highlight is **purple** `#AE71BD`.
   - The **Visual** highlight is **light gray** `#363639`.
 
-## Screenshots
+## Colors
 
-![javascript](./screenshots/js.png)
-![css](./screenshots/scss.png)
+![collection](./screenshots/Darkforce-vim-colors.png)
+
+[collection css](./collection/Darkforce-vim-colors.css)
+
+[collection json](./collection/Darkforce-vim-colors.json)
+
 
 ## JAVASCRIPT PLUGINS USED
 
