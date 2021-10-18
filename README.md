@@ -32,8 +32,10 @@ My **goal** with **darkforce** is the **easy visualization** of what **I conside
 ## Colors
 
 ![collection](./screenshots/Darkforce-vim-colors.png)
-![collection css](./screenshots/Darkforce-vim-colors.css)
-![collection json](./screenshots/Darkforce-vim-colors.json)
+
+[collection css](./screenshots/Darkforce-vim-colors.css)
+
+[collection json](./screenshots/Darkforce-vim-colors.json)
 
 
 ## JAVASCRIPT PLUGINS USED
