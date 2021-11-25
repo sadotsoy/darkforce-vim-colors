@@ -1,3 +1,6 @@
+**DEPRECATED** the true empire of darkness lives in: [darkforce-vim](https://github.com/sadotsoy/darkforce-vim)
+
+
 # Darkforce color
 
 ## Version 2.0
